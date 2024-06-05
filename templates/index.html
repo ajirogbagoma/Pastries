@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastries</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">CrescentPastries</h2>
+        </div>
+
+        <div class="menu">
+            <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div id="search-bar">
+            <input type="search" name="" placeholder="Type To text" />
+        </div>
+    </div>
+    <div class="content">
+        <h1>CrescentPastries</h1>
+        <p class="par">A place where your tastebud comes alive</p>
+
+        <div class="form" style="display: none;">
+            <h2>Login Here</h2>
+            <input type="email" name="email" placeholder="Enter Email Here"><br>
+            <input type="password" name="" placeholder="Enter password Here">
+            <button class="btn"><a href="#">Login</a></button>
+
+            <p class="link">Don't have an account?<br>
+            <a href="#">Sign up </a> here</a></p>
+            <p class="liw">Log in with</p>
+        </div>
+    </div>
+  </div>
+  <div id="recipes" class="recipes">
+    <div id="1">
+        <h2>Light Fluffy Hotdog Buns 🌭</h2>
+        <p>Ingredients</p>
+        <ul>
+            <li>1 cup warm water</li>
+            <li>1/4 cup sugar</li>
+            <li>1/4 cup oil</li>
+            <li>1/4 cup milk</li>
+            <li>1 egg</li>
+            <li>1 tsp salt</li>
+            <li>4 cups flour</li>
+            <li>1 tbsp yeast</li>
+        </ul>
+    </div>
+    <div id="2">
+        <h2>Lemon Sugar Cookies 🍪</h2>
+        <p>Ingredients</p>
+        <ul>
+            <li>1 cup butter</li>
+            <li>1 cup sugar</li>
+            <li>1 egg</li>
+            <li>1 tsp vanilla</li>
+            <li>1/2 tsp lemon extract</li>
+            <li>2 1/2 cups flour</li>
+            <li>1/2 tsp baking powder</li>
+            <li>1/2 tsp salt</li>
+        </ul>
+    </div>
+  </div>
+  <div id="diy" class="recipes">
+    <h2>ButterMilk 🥛</h2>
+    <p>
+        <ul>
+            <li>1 cup milk</li>
+            <li>1 tbsp vinegar</li>
+        </ul>
+    </p>
+    <h2>HeavyCream 🥛</h2>
+    <p>
+        <ul>
+            <li>1 cup milk</li>
+            <li>1/3 cup butter</li>
+        </ul>
+    </p>
+  </div>
+  <div id="comments">
+    <form action="/comments" method="POST">
+        <h2>Comments</h2>
+        <p>Leave a comment</p>
+        <input type="text" name="name" id="name" placeholder="Name">
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <button class="btn">Submit</button>
+    </form>
+
+    <div id="comment-section">
+        {% for comment in comments %}
+        <div class="comment">
+            <h2>{{comment.split(': ')[0]}}</h2>
+            <p>{{comment.split(': ')[1]}}</p>
+        </div>
+        {% endfor %}
+  </div>
+</body>
+</html>

@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: url("/static/meatpie.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.main {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+
+.logo {
+  color: #9932CC;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.icon {
+  width: 200px;
+  float: right;
+  height: 70px;
+  margin-right: 150px;
+}
+
+.menu {
+  width: 400px;
+  float: left;
+  height: 70px;
+}
+
+ul {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+  color: #9932CC;
+}
+
+.search {
+  width: 500px;
+  float: left;
+  margin-left: 270px;
+  margin-right: 500px;
+}
+
+.srch {
+  font-family: 'Times New Roman';
+  width: 200px;
+  height: 40px;
+  background: black;
+  border: 1px solid #9932CC;
+  margin-top: 13px;
+  color: #fff;
+  border-right: none;
+  font-size: 16px;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.btn {
+  width: 50px;
+  height: 40px;
+  background: #9932CC;
+  border: 2px solid #9932CC;
+  margin-top: 13px;
+  color: #fff;
+  font-size: 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.srch:focus {
+  outline: none;
+}
+
+.content {
+  width: 1200px;
+  height: auto;
+  margin: left;
+  color: white;
+  position: relative;
+}
+
+.content .par {
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+
+.content h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 9px;
+}
+
+.form {
+  width: 250px;
+  height: 380px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+  position: absolute;
+  top: 20px;
+  right: -200px;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form h2 {
+  width: 220px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #9932CC;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.form input {
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #9932CC;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.btn {
+  background: #9932CC;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #9932CC;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.form .link {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  padding: 20px;
+  text-align: center;
+}
+
+.form .link a {
+  text-decoration: none;
+  color: #9932CC;
+}
+
+.liw {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#search-bar {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-bar input {
+  width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #9932CC;
+  padding: 5px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.recipes {
+  margin-left: 20px;
+  padding: 10px;
+  font-family: 'comic sans ms';
+  margin-top: -500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#diy {
+  margin-top: 20px;
+  margin-left: 600px !important;
+  height: 150px;
+}
+
+#diy h2 {
+  margin-bottom: 10px!important;
+}
+
+#comments {
+  margin-top: 20px;
+  width: 60vw;
+  margin-left: 200px;
+  height: 150px;
+}
+
+#comments h2 {
+  margin-bottom: 10px!important;
+}
+
+#comments .comment {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#comments textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #9932CC;
+  padding: 5px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+#comments input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #9932CC;
+  padding: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
